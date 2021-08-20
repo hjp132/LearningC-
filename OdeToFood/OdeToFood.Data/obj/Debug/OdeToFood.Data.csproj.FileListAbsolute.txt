@@ -1,0 +1,6 @@
+C:\Users\hpalmer\source\repos\C#Training\OdeToFood\OdeToFood.Data\bin\Debug\OdeToFood.Data.dll
+C:\Users\hpalmer\source\repos\C#Training\OdeToFood\OdeToFood.Data\bin\Debug\OdeToFood.Data.pdb
+C:\Users\hpalmer\source\repos\C#Training\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.csproj.AssemblyReference.cache
+C:\Users\hpalmer\source\repos\C#Training\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.csproj.CoreCompileInputs.cache
+C:\Users\hpalmer\source\repos\C#Training\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.dll
+C:\Users\hpalmer\source\repos\C#Training\OdeToFood\OdeToFood.Data\obj\Debug\OdeToFood.Data.pdb

@@ -1,0 +1,16 @@
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.exe
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.deps.json
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.runtimeconfig.json
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.runtimeconfig.dev.json
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.dll
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\bin\Debug\net5.0\ref\MyFirstProgram.dll
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.pdb
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.csproj.AssemblyReference.cache
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.AssemblyInfoInputs.cache
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.AssemblyInfo.cs
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.csproj.CoreCompileInputs.cache
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.dll
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\obj\Debug\net5.0\ref\MyFirstProgram.dll
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.pdb
+C:\Users\hpalmer\source\repos\C#Training\MyFirstProgram\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.genruntimeconfig.cache
