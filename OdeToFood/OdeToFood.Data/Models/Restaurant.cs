@@ -14,7 +14,9 @@ namespace OdeToFood.Data.Models
         public string Name { get; set; }
 
         [Display(Name="Type of food")]
-        public CuisineType Cuisine { get; set; }
+
+        // How would you properly implement each CuisineType from another database?
+        public CuisineType cuisineid{  get; set; }
 
     }
 }

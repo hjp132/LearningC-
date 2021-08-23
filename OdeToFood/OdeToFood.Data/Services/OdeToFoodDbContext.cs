@@ -11,5 +11,6 @@ namespace OdeToFood.Data.Services
     public class OdeToFoodDbContext : DbContext
     {
         public DbSet<Restaurant> Restaurants { get; set; }
+        public DbSet<CuisineType> CuisineTypes { get; set; }
     }
 }

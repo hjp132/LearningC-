@@ -1,15 +1,15 @@
-﻿using System;
+﻿using OdeToFood.Data.Models;
+using OdeToFood.Data.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Net;
 using System.Web.Http;
-using System.Web.Mvc;
 
 namespace OdeToFood.Web.Api
 {
     public class CuisineTypeController : ApiController
     {
-
         private readonly ICuisineTypeData db;
 
         public CuisineTypeController(ICuisineTypeData db)
@@ -17,11 +17,10 @@ namespace OdeToFood.Web.Api
             this.db = db;
         }
 
-        // GET: CuisineType
-        public enum<CuisineType2> Get()
+        public IEnumerable<CuisineType> Get()
         {
-            var model; //CuisineType
-            return model
+            var model = db.GetAll();
+            return model;
         }
     }
 }

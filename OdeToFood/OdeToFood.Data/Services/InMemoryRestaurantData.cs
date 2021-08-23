@@ -9,17 +9,17 @@ namespace OdeToFood.Data.Services
     {
         List<Restaurant> restaurants;
 
-        public InMemoryRestaurantData()
-        {
+        //public InMemoryRestaurantData()
+        //{
 
-            restaurants = new List<Restaurant>()
-            {
-                new Restaurant { Id = 1, Name = "Scott's Pizza", Cuisine = CuisineType.Italian},
-                new Restaurant { Id = 2, Name = "Tersiguels", Cuisine = CuisineType.French},
-                new Restaurant { Id = 3, Name = "Mango Grove", Cuisine = CuisineType.Indian}
-            };
+        //    restaurants = new List<Restaurant>()
+        //    {
+        //        new Restaurant { Id = 1, Name = "Scott's Pizza", Cuisine = CuisineType.Italian},
+        //        new Restaurant { Id = 2, Name = "Tersiguels", Cuisine = CuisineType.French},
+        //        new Restaurant { Id = 3, Name = "Mango Grove", Cuisine = CuisineType.Indian}
+        //    };
             
-        }
+        //}
         
         public void Add(Restaurant restaurant)
         {
@@ -42,7 +42,8 @@ namespace OdeToFood.Data.Services
             if(existing != null)
             {
                 existing.Name = restaurant.Name;
-                existing.Cuisine = restaurant.Cuisine;
+                // cuisine id should probably be changed to cusine name soon
+                existing.cuisineid = restaurant.cuisineid;
             }
         }
         public void Delete(int id)
