@@ -1,0 +1,3 @@
+Implement another table just for adding food types
+Give the user the ability to add and remove types of food 
+Add validation for each use case ie ( if a food type that is being used is removed ) 

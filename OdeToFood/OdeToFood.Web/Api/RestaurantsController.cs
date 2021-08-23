@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web.Http;
 
-namespace OdeToFood.Web.Controllers
+namespace OdeToFood.Web.Api
 {
     public class RestaurantsController : ApiController
     {

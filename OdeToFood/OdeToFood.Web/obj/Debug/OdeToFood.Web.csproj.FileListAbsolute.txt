@@ -209,3 +209,8 @@ C:\Users\hpalmer\source\repos\C#Training\LearningC#\OdeToFood\OdeToFood.Web\obj\
 C:\Users\hpalmer\source\repos\C#Training\LearningC#\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.dll
 C:\Users\hpalmer\source\repos\C#Training\LearningC#\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.pdb
 C:\Users\hpalmer\source\repos\C#Training\LearningC#\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.xml
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\OdeToFood\OdeToFood.Web\bin\EntityFramework.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\OdeToFood\OdeToFood.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\OdeToFood\OdeToFood.Web\bin\OdeToFood.Data.dll.config
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\OdeToFood\OdeToFood.Web\bin\EntityFramework.xml
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\OdeToFood\OdeToFood.Web\bin\EntityFramework.SqlServer.xml

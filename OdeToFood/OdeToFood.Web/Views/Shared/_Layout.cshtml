@@ -23,11 +23,20 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Restaurants", "Index", "Restaurants")</li>
+                    <li>@Html.ActionLink("FoodType", "Index", "FoodType")</li>
+
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
+        @if(TempData["Message"] != null)
+            {
+                <div class="alert alert-info">
+                    @TempData["Message"];'
+                </div>
+            }
         @RenderBody()
         <hr />
         <footer>
