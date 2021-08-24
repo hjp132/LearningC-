@@ -170,7 +170,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\FoodTypeController.cs" />
+    <Compile Include="Controllers\CuisineTypeController.cs" />
     <Compile Include="Controllers\GreetingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Api\RestaurantsController.cs" />
@@ -225,12 +225,15 @@
     <Content Include="Views\Restaurants\Edit.cshtml" />
     <Content Include="Views\Restaurants\Delete.cshtml" />
     <Content Include="Views\Restaurants\_RestaurantSummary.cshtml" />
-    <Content Include="Views\FoodType\Index.cshtml" />
-    <Content Include="Views\FoodType\Details.cshtml" />
+    <Content Include="Views\CuisineType\Index.cshtml" />
+    <Content Include="Views\CuisineType\Details.cshtml" />
+    <Content Include="Views\CuisineType\Create.cshtml" />
+    <Content Include="Views\CuisineType\Delete.cshtml" />
+    <Content Include="Views\CuisineType\Edit.cshtml" />
+    <Content Include="Views\CuisineType\_CuisineSummary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\CuisineType\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
