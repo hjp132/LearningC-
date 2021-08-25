@@ -1,5 +1,6 @@
 ﻿using OdeToFood.Data.Models;
 using OdeToFood.Data.Services;
+using OdeToFood.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,16 @@ namespace OdeToFood.Web.Controllers
     public class RestaurantsController : Controller
     {
         private readonly IRestaurantData db;
+        private ICuisineTypeData cuisineTypeData;
 
-        public RestaurantsController(IRestaurantData db)
+        public RestaurantsController(IRestaurantData db, ICuisineTypeData cuisineTypeData)
         {
             this.db = db;
+            this.cuisineTypeData = cuisineTypeData;
         }
+
+   
+
 
         // GET: Restaurants
         public ActionResult Index()
@@ -26,19 +32,32 @@ namespace OdeToFood.Web.Controllers
 
         public ActionResult Details(int id)
         {
-            var model = db.Get(id);
-            if(model == null)
+            var restaurant = db.Get(id);
+
+            if(restaurant == null)
             {
                 return View("NotFound");
             }
+
+            var model = new RestaurantViewModel() { cuisineTypeID = restaurant.cuisineTypeID, Id = restaurant.Id, Name = restaurant.Name };
+            model.CuisineTypesList = cuisineTypeData.GetAll()
+                .Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString() })
+                .ToList();
+
+          
             return View(model);
         }
-
+  
         [HttpGet]
         public ActionResult Create()
         {
-            
-            return View();
+            var model = new RestaurantViewModel();
+            model.CuisineTypesList = cuisineTypeData.GetAll()
+                .Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString() })
+                //.Select(x => new SelectListItem { Text = $"{x}", Value = $"{x}" })
+                .ToList();
+                
+            return View(model);
         }
 
         [HttpPost]
@@ -62,11 +81,18 @@ namespace OdeToFood.Web.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var model = db.Get(id);
-            if(model == null)
+            var restaurant = db.Get(id);
+            
+            if (restaurant == null)
             {
                 return View("NotFound");
             }
+
+            var model = new RestaurantViewModel() { cuisineTypeID = restaurant.cuisineTypeID, Id = restaurant.Id, Name = restaurant.Name };
+            model.CuisineTypesList = cuisineTypeData.GetAll()
+            .Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString() })
+            .ToList();
+
             return View(model);
         }
 
@@ -80,6 +106,7 @@ namespace OdeToFood.Web.Controllers
                 TempData["Message"] = "You have saved the restaurant!";
                 return RedirectToAction("Details", new { id = restaurant.Id });
             }
+            
             return View(restaurant);
         }
 

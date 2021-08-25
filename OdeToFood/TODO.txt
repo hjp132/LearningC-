@@ -1,10 +1,6 @@
-Implement another table just for adding food types
-Give the user the ability to add and remove types of food 
-Add validation for each use case ie ( if a food type that is being used is removed ) 
+// Work on fixing edit 
+// Work and on saving cuisine type properly
 
 
-
-- Things that need to be worked out:
-How to link the CuisineTypes back to the restaurants and how to properly refer them? 
-( Possibly: get a cusinetype id and retrieve name from that?)
-
+// create a restaurants details viewmodel 
+// populate it with the cuisine type name by loooking up the name

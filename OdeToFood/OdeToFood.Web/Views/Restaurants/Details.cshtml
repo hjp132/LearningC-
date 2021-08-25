@@ -1,11 +1,15 @@
-﻿@model OdeToFood.Data.Models.Restaurant
+﻿@model OdeToFood.Web.Models.RestaurantViewModel
+
 
 @{
     ViewBag.Title = "Details";
 }
 
 <h2>Details for @Model.Name</h2>
+<script type="text/javascript">
 
+
+</script>
 <div>
     <h4>Restaurant</h4>
     <hr />
@@ -18,12 +22,16 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Cuisine)
+            @Html.LabelFor(model => model.cuisineTypeID, htmlAttributes: new { @class = "control-label col-md-2" })
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Cuisine)
+            @Html.DropDownListFor(model => model.cuisineTypeID, Model.CuisineTypesList, htmlAttributes: new { disabled = "disabled" })
+            @Html.HiddenFor(model => model.cuisineTypeID)
+
         </dd>
+
+   
 
     </dl>
 </div>

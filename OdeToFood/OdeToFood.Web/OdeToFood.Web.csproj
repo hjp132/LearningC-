@@ -179,6 +179,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\GreetingViewModel.cs" />
+    <Compile Include="Models\RestaurantViewDetails.cs" />
+    <Compile Include="Models\RestaurantViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +233,7 @@
     <Content Include="Views\CuisineType\Delete.cshtml" />
     <Content Include="Views\CuisineType\Edit.cshtml" />
     <Content Include="Views\CuisineType\_CuisineSummary.cshtml" />
+    <Content Include="Views\Restaurants\_cuisinetypeInput.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
