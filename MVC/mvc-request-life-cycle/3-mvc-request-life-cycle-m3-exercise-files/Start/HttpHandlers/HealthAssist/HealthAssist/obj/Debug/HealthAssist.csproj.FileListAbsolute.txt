@@ -1,0 +1,133 @@
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\HealthAssist.dll.config
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\HealthAssist.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\HealthAssist.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\Antlr3.Runtime.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\Microsoft.Web.Infrastructure.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\Newtonsoft.Json.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Helpers.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Mvc.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Optimization.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Razor.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.Deployment.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.Razor.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\WebGrease.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Helpers.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Mvc.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Optimization.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Razor.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.Deployment.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.Razor.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\Antlr3.Runtime.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\bin\Newtonsoft.Json.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\obj\Debug\HealthAssist.csprojResolveAssemblyReference.cache
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\obj\Debug\HealthAssist.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthAssist\obj\Debug\HealthAssist.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\HealthAssist.dll.config
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\HealthAssist.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\HealthAssist.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\Antlr3.Runtime.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\Microsoft.Web.Infrastructure.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\Modules.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\Newtonsoft.Json.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.Helpers.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.Mvc.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.Optimization.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.Razor.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.WebPages.Deployment.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.WebPages.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.WebPages.Razor.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\WebGrease.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\Modules.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.Helpers.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.Mvc.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.Optimization.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.Razor.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.WebPages.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.WebPages.Deployment.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\System.Web.WebPages.Razor.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\Antlr3.Runtime.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\bin\Newtonsoft.Json.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\obj\Debug\HealthAssist.csprojResolveAssemblyReference.cache
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\obj\Debug\HealthAssist.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\HealthAssist\obj\Debug\HealthAssist.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\obj\Debug\HealthAssist.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\obj\Debug\HealthAssist.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\HealthAssist.dll.config
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\HealthAssist.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\HealthAssist.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\Antlr3.Runtime.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\Microsoft.Web.Infrastructure.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\Newtonsoft.Json.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Helpers.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Mvc.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Optimization.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Razor.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.Deployment.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.Razor.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\WebGrease.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Helpers.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Mvc.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Optimization.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.Razor.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.Deployment.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\System.Web.WebPages.Razor.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\Antlr3.Runtime.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HealthAssist\HealthAssist\bin\Newtonsoft.Json.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\HealthAssist.dll.config
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\HealthAssist.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\HealthAssist.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\Antlr3.Runtime.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\Microsoft.Web.Infrastructure.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\Newtonsoft.Json.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Helpers.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Mvc.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Optimization.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Razor.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.Deployment.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.Razor.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\WebGrease.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Helpers.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Mvc.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Optimization.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Razor.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.Deployment.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.Razor.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\Antlr3.Runtime.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\bin\Newtonsoft.Json.xml
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\obj\Debug\HealthAssist.csprojResolveAssemblyReference.cache
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\obj\Debug\HealthAssist.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m3\Demos\Start\HttpHandlers\HealthAssist\HealthAssist\obj\Debug\HealthAssist.pdb
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\HealthAssist.dll.config
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\HealthAssist.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\HealthAssist.pdb
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\Antlr3.Runtime.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\Newtonsoft.Json.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Helpers.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Mvc.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Optimization.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Razor.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.Razor.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\WebGrease.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Helpers.xml
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Mvc.xml
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Optimization.xml
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.Razor.xml
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.xml
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\System.Web.WebPages.Razor.xml
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\Antlr3.Runtime.pdb
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\bin\Newtonsoft.Json.xml
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\obj\Debug\HealthAssist.csproj.AssemblyReference.cache
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\obj\Debug\HealthAssist.csproj.CoreCompileInputs.cache
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\obj\Debug\HealthAssist.csproj.CopyComplete
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\obj\Debug\HealthAssist.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\mvc-request-life-cycle\3-mvc-request-life-cycle-m3-exercise-files\Start\HttpHandlers\HealthAssist\HealthAssist\obj\Debug\HealthAssist.pdb

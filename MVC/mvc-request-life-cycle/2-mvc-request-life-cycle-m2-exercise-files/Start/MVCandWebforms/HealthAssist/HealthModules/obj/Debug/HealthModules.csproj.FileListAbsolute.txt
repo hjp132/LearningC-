@@ -1,0 +1,5 @@
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthModules\bin\Debug\HealthModules.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthModules\bin\Debug\HealthModules.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthModules\obj\Debug\HealthModules.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthModules\obj\Debug\HealthModules.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\Start\HealthAssist\HealthModules\obj\Debug\HealthModules.csprojResolveAssemblyReference.cache

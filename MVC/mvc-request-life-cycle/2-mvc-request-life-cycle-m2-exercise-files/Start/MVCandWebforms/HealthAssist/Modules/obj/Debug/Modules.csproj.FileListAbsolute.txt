@@ -1,0 +1,4 @@
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\Modules\bin\Debug\Modules.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\Modules\bin\Debug\Modules.pdb
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\Modules\obj\Debug\Modules.dll
+C:\Pluralsight\Courses\MVC Request Life Cycle\mvc-request-life-cycle-m2\Demos\HealthAssist\Modules\obj\Debug\Modules.pdb
