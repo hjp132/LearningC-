@@ -1,0 +1,6 @@
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\MVC\HtmlHelperLibrary\2-html-helper-library-aspdotnet-mvc5-m2-exercise-files\demo-start\PTCCommon\bin\Debug\PTCCommon.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\MVC\HtmlHelperLibrary\2-html-helper-library-aspdotnet-mvc5-m2-exercise-files\demo-start\PTCCommon\bin\Debug\PTCCommon.pdb
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\MVC\HtmlHelperLibrary\2-html-helper-library-aspdotnet-mvc5-m2-exercise-files\demo-start\PTCCommon\obj\Debug\PTCCommon.csproj.CoreCompileInputs.cache
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\MVC\HtmlHelperLibrary\2-html-helper-library-aspdotnet-mvc5-m2-exercise-files\demo-start\PTCCommon\obj\Debug\PTCCommon.dll
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\MVC\HtmlHelperLibrary\2-html-helper-library-aspdotnet-mvc5-m2-exercise-files\demo-start\PTCCommon\obj\Debug\PTCCommon.pdb
+C:\Users\hpalmer\source\repos\C#Training\LearningC#\MVC\HtmlHelperLibrary\2-html-helper-library-aspdotnet-mvc5-m2-exercise-files\demo-start\PTCCommon\obj\Debug\PTCCommon.csproj.AssemblyReference.cache
