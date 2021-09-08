@@ -7,13 +7,13 @@ namespace OdeToFood.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class NewReRun : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(NewReRun));
         
         string IMigrationMetadata.Id
         {
-            get { return "202108201505572_InitialCreate"; }
+            get { return "202109080932116_NewReRun"; }
         }
         
         string IMigrationMetadata.Source

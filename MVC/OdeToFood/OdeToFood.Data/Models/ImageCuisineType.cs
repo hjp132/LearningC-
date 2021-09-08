@@ -16,7 +16,7 @@ namespace OdeToFood.Data.Models
   
     
 
-    public class CuisineType
+    public class ImageCuisineType
     {
         
         public int Id { get; set; }

@@ -178,6 +178,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CuisineTypeViewModel.cs" />
     <Compile Include="Models\GreetingViewModel.cs" />
     <Compile Include="Models\RestaurantViewDetails.cs" />
     <Compile Include="Models\RestaurantViewModel.cs" />
@@ -236,11 +237,11 @@
     <Content Include="Views\Restaurants\_RestaurantSummary.cshtml" />
     <Content Include="Views\CuisineType\Index.cshtml" />
     <Content Include="Views\CuisineType\Details.cshtml" />
-    <Content Include="Views\CuisineType\Create.cshtml" />
     <Content Include="Views\CuisineType\Delete.cshtml" />
     <Content Include="Views\CuisineType\Edit.cshtml" />
     <Content Include="Views\CuisineType\_CuisineSummary.cshtml" />
     <Content Include="Views\Restaurants\_cuisinetypeInput.cshtml" />
+    <Content Include="Views\CuisineType\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

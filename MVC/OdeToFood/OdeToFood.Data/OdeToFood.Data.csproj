@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,11 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202108201505572_InitialCreate.cs" />
-    <Compile Include="Migrations\202108201505572_InitialCreate.designer.cs">
-      <DependentUpon>202108201505572_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202109071534234_Initial.cs" />
+    <Compile Include="Migrations\202109071534234_Initial.designer.cs">
+      <DependentUpon>202109071534234_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109080853193_Test.cs" />
+    <Compile Include="Migrations\202109080853193_Test.designer.cs">
+      <DependentUpon>202109080853193_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109080932116_NewReRun.cs" />
+    <Compile Include="Migrations\202109080932116_NewReRun.designer.cs">
+      <DependentUpon>202109080932116_NewReRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109081344034_NewOne.cs" />
+    <Compile Include="Migrations\202109081344034_NewOne.designer.cs">
+      <DependentUpon>202109081344034_NewOne.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ImageCuisineType.cs" />
     <Compile Include="Models\CuisineType.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +86,20 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202108201505572_InitialCreate.resx">
-      <DependentUpon>202108201505572_InitialCreate.cs</DependentUpon>
+    <Folder Include="UserImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202109071534234_Initial.resx">
+      <DependentUpon>202109071534234_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109080853193_Test.resx">
+      <DependentUpon>202109080853193_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109080932116_NewReRun.resx">
+      <DependentUpon>202109080932116_NewReRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109081344034_NewOne.resx">
+      <DependentUpon>202109081344034_NewOne.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

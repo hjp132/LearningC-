@@ -15,7 +15,9 @@ namespace OdeToFood.Data.Models
 
         [Display(Name="Type of food")]
 
-        // How would you properly implement each CuisineType from another database?
+
         public int cuisineTypeID{  get; set; }
+
+        
     }
 }

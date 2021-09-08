@@ -9,8 +9,7 @@
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "OdeToFood.Data.Services.OdeToFoodDbContext";
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(OdeToFood.Data.Services.OdeToFoodDbContext context)

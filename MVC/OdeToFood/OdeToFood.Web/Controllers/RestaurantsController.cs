@@ -26,7 +26,12 @@ namespace OdeToFood.Web.Controllers
         // GET: Restaurants
         public ActionResult Index()
         {
-            var model = db.GetAll();
+            var restaurant = db.GetAll();
+            var model = new RestaurantViewModel()
+            {   
+            };
+            
+            
             return View(model);
         }
 
@@ -41,7 +46,7 @@ namespace OdeToFood.Web.Controllers
 
             var model = new RestaurantViewModel() { cuisineTypeID = restaurant.cuisineTypeID, Id = restaurant.Id, Name = restaurant.Name };
             model.CuisineTypesList = cuisineTypeData.GetAll()
-                .Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString() })
+                .Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString()})
                 .ToList();
 
           
@@ -52,12 +57,17 @@ namespace OdeToFood.Web.Controllers
         public ActionResult Create()
         {
             var model = new RestaurantViewModel();
-            model.CuisineTypesList = cuisineTypeData.GetAll()
-                .Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString() })
+
+            var cusineTypes = cuisineTypeData.GetAll();
+            model.CuisineTypesList = cusineTypes.Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString() })
                 //.Select(x => new SelectListItem { Text = $"{x}", Value = $"{x}" })
                 .ToList();
-                
+
             return View(model);
+            //model.CuisineTypesList = cuisineTypeData.GetAll()
+            //    .Select(x => new SelectListItem { Text = x.Name + x.ImagePath.ToString(), Value = x.Id.ToString()})
+            //    //.Select(x => new SelectListItem { Text = $"{x}", Value = $"{x}" })
+            //    .ToList();
         }
 
         [HttpPost]
