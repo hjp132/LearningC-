@@ -1,0 +1,20 @@
+.footer {
+  background: $black;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px $h-padding;
+}
+
+.footer__brand {
+  font-family: $font-nunito;
+  font-size: rem-calc(21);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+.footer__info {
+  font-family: $font-open;
+  font-size: rem-calc(14px);
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Open+Sans&display=swap');
+
+
+// typography
+$base-font-size: 14px;
+$font-nunito: 'Nunito', sans-serif;
+$font-open: 'Open Sans', sans-serif;
+
+//colours
+$black: #2e282a;
+$white: #fff;
+$navbar-red: #ef3e36;
+$blue: #17beeb;
+
+//generics
+$h-padding: 130px; // this is temporary
+
+//mixins
+@import '../mixins/aspect-ratio';
+@import '../mixins/breakpoints';
+@import '../mixins/rem-calc';
+@import '../mixins/ie11';

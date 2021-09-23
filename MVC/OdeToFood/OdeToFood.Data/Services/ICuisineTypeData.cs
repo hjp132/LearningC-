@@ -11,6 +11,7 @@ namespace OdeToFood.Data.Services
     {
         IEnumerable<CuisineType> GetAll();
         CuisineType Get(int id);
+        //IEnumerable<CuisineType> GetCuisineString(int restaurantCuisineId);
         void Add(CuisineType cuisineType);
         void Update(CuisineType cuisineType);
         void Delete(int id);

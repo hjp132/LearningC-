@@ -26,6 +26,11 @@ namespace OdeToFood.Web
             builder.RegisterType<SqlRestaurantData>()
                 .As<IRestaurantData>()
                 .InstancePerRequest();
+
+            builder.RegisterType<SqlRestaurantImagesData>()
+                .As<IRestaurantImagesData>()
+                .InstancePerRequest();
+
             builder.RegisterType<OdeToFoodDbContext>().InstancePerRequest();
 
             var container = builder.Build();

@@ -15,8 +15,13 @@ namespace OdeToFood.Data.Models
 
         [Display(Name="Type of food")]
 
-
         public int cuisineTypeID{  get; set; }
+
+        [Required]
+        [Display(Name = "Restaurant Description")]
+        [MaxLength(1000, ErrorMessage = "Maximum Characters Exceeded ( {1} characters.")]
+        [MinLength(4, ErrorMessage = "Must have atleast characters ( {1} characters.")]
+        public string Desc { get; set; }
 
         
     }

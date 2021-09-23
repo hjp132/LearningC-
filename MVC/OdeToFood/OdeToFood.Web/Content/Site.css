@@ -22,3 +22,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+
+.image-delete{
+    padding: 20px;
+}
+
+.image-delete:hover {
+    webkit-filter: blur(4px);
+    filter: blur(4px)
+}

@@ -12,10 +12,6 @@ namespace OdeToFood.Web.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-
-        [Required]
-        [DisplayName("Upload File")]
-        public string ImagePath { get; set; }
-        public HttpPostedFile ImageFile { get; set; }
+        public byte[] ImageFileToDisplay { get; set; }
     }
 }

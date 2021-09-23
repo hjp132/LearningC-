@@ -33,6 +33,7 @@ namespace OdeToFood.Data.Services
         {
             return db.Restaurants.FirstOrDefault(r => r.Id == id);
         }
+        
 
         public IEnumerable<Restaurant> GetAll()
         {

@@ -9,13 +9,6 @@ using System.Web;
 
 namespace OdeToFood.Data.Models
 {
-    //public enum CuisineType
-    //{
-
-    //}
-  
-    
-
     public class CuisineType
     {
         

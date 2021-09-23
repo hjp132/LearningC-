@@ -28,6 +28,7 @@ namespace OdeToFood.Data.Services
             return db.CuisineTypes.FirstOrDefault(r => r.Id == id);
         }
 
+        
         public void Add(CuisineType cuisineType)
         {
             db.CuisineTypes.Add(cuisineType);

@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Configuration;
 using OdeToFood.Web.Models;
+using OdeToFood.Web.Common;
 
 namespace OdeToFood.Web.Controllers
 {
@@ -30,12 +31,18 @@ namespace OdeToFood.Web.Controllers
 
         public ActionResult Details(int id)
         {
-            var model = db.Get(id);
-            if (model == null)
+            var cuisine = db.Get(id);
+            if (cuisine == null)
             {
                 return View("NotFound");
             }
 
+            var model = new CuisineTypeViewModel()
+            {
+                Name = cuisine.Name
+            };
+            model.ImageFileToDisplay = cuisine.ImageFile;
+            
             return View(model);
         }
 
@@ -43,127 +50,76 @@ namespace OdeToFood.Web.Controllers
         public ActionResult Create()
         {
             var model = new CuisineTypeViewModel();
-            
-
 
             return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(CuisineType cuisineType, HttpPostedFileBase postedFile)
+        public ActionResult Create(CuisineTypeViewModel cuisine, HttpPostedFileBase image)
         {
-            var model = new CuisineTypeViewModel();
+            string FileName = HelperClass.GetFileName(image);
+            var bytes = HelperClass.PostedImageToByte(image);
 
-            if (String.IsNullOrEmpty(cuisineType.Name))
+            var model = new Data.Models.CuisineType()
             {
-                ModelState.AddModelError(nameof(cuisineType.Name), "The name is required");
-            }
-
-            using (BinaryReader br = new BinaryReader(postedFile.InputStream))
-            {
-                cuisineType.ImageFile = br.ReadBytes(postedFile.ContentLength);
-                
-                
-                
-            }
-
-
-
+                Name = cuisine.Name,
+                ImageFile = bytes,
+                ImagePath = FileName,
+            };
+            
             if (ModelState.IsValid)
             {
-                System.Diagnostics.Debug.WriteLine("Does work");
-                db.Add(cuisineType);
-                return RedirectToAction("Details", new { id = cuisineType.Id });
+                db.Add(model);
+                return RedirectToAction("Index", new { id = model.Id });
             }
-
-            System.Diagnostics.Debug.WriteLine("Doesn't work");
             return View();
         }
 
 
-        //public ActionResult Create(CuisineType cuisineType)
-        //{
-        //    if (String.IsNullOrEmpty(cuisineType.Name))
-        //    {
-        //        ModelState.AddModelError(nameof(cuisineType.Name), "The name is required");
-        //    }
-
-        //    if (ModelState.IsValid)
-        //    {
-        //        System.Diagnostics.Debug.WriteLine("Does work");
-
-
-        //        //Use Namespace called :  System.IO  
-        //        string FileName = Path.GetFileNameWithoutExtension(cuisineType.ImageFile.FileName);
-
-        //        //To Get File Extension  
-        //        string FileExtension = Path.GetExtension(cuisineType.ImageFile.FileName);
-
-        //        //Add Current Date To Attached File Name  
-        //        FileName = DateTime.Now.ToString("yyyyMMdd") + "-" + FileName.Trim() + FileExtension;
-
-        //        //Get Upload path from Web.Config file AppSettings.  
-        //        string UploadPath = ConfigurationManager.AppSettings["UserImagePath"].ToString();
-
-        //        //Its Create complete path to store in server.  
-        //        cuisineType.ImagePath = UploadPath + FileName;
-
-        //        //To copy and save file into server.  
-        //        cuisineType.ImageFile.SaveAs(cuisineType.ImagePath);
-
-        //        db.Add(cuisineType);
-        //        return RedirectToAction("Details", new { id = cuisineType.Id });
-        //    }
-
-
-
-
-
-        //    System.Diagnostics.Debug.WriteLine("Doesn't work");
-        //    return View();
-        //}
-
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var model = db.Get(id);
-            if (model == null)
+            var cuisine = db.Get(id);
+            if (cuisine == null)
             {
                 return View("NotFound");
             }
+
+            var model = new CuisineTypeViewModel()
+            {
+                Name = cuisine.Name
+            };
+            model.ImageFileToDisplay = cuisine.ImageFile;
             return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(CuisineType cuisineType)
+        public ActionResult Edit(int id, HttpPostedFileBase image)
         {
+            var cuisine = db.Get(id);
+
+            string FileName = HelperClass.GetFileName(image);
+            var bytes = HelperClass.PostedImageToByte(image);
+
+            cuisine.ImageFile = bytes;
+
+
+            var model = new CuisineTypeViewModel()
+            {
+                Id = cuisine.Id,
+                Name = cuisine.Name,
+                ImageFileToDisplay = cuisine.ImageFile
+            };
+
             if (ModelState.IsValid)
             {
-                ////Use Namespace called :  System.IO  
-                //string FileName = Path.GetFileNameWithoutExtension(cuisineType.ImageFile.FileName);
-
-                ////To Get File Extension  
-                //string FileExtension = Path.GetExtension(cuisineType.ImageFile.FileName);
-
-                ////Add Current Date To Attached File Name  
-                //FileName = DateTime.Now.ToString("yyyyMMdd") + "-" + FileName.Trim() + FileExtension;
-
-                ////Get Upload path from Web.Config file AppSettings.  
-                //string UploadPath = ConfigurationManager.AppSettings["UserImagePath"].ToString();
-
-                ////Its Create complete path to store in server.  
-                //cuisineType.ImagePath = UploadPath + FileName;
-
-                ////To copy and save file into server.  
-                //cuisineType.ImageFile.SaveAs(cuisineType.ImagePath);
-
-                db.Update(cuisineType);
+                db.Update(cuisine);
                 TempData["Message"] = "You have saved the CuisineType!";
-                return RedirectToAction("Details", new { id = cuisineType.Id });
+                return RedirectToAction("Details", new { id = cuisine.Id });
             }
-            return View(cuisineType);
+            return View(cuisine);
         }
 
         [HttpGet]
@@ -184,6 +140,8 @@ namespace OdeToFood.Web.Controllers
             db.Delete(id);
             return RedirectToAction("Index");
         }
-    }
 
+
+    }
 }
+

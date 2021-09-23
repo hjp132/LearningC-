@@ -1,0 +1,18 @@
+﻿{
+  "sass": {
+    "source": [ "src/scss/**/*.scss" ],
+    "destination": "./web/css",
+    "lint" : ["src/scss/**/*.scss", "!src/scss/libs/*.scss"]
+  },
+  "svgo": {
+    "source": "src/svg/original/*",
+    "destination": "src/svg/cleaned/"
+  },
+  "svg": {
+    "watch": [ "src/svg/cleaned/*.svg" ],
+    "source": "src/svg/cleaned/*.svg",
+    "spritedestination": "./web/svg/",
+    "scssdestination": "./",
+    "rootdestination": "./"
+  }
+}
