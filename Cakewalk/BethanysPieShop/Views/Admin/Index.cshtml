@@ -1,0 +1,29 @@
+﻿@model AdminViewModel
+
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <p class="button">
+        <a class="btn btn-primary"
+           asp-controller="Admin"
+           asp-action="Create">Create Pie</a>
+    </p>
+    <div class="row">
+
+
+        @foreach (var pie in Model.AllPies)
+        {
+            <partial name="_AdminPieCard" model="pie" />
+        }
+    </div>
+}
+else
+{
+    <h1>Sorry, you don't have access to this page.</h1>
+
+}
+

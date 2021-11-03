@@ -1,0 +1,47 @@
+﻿@model PiesItemViewModel
+
+<form asp-controller="Admin" asp-action="Create" method="post">
+    <fieldset>
+        <div>
+            @Html.LabelFor(m => m.Name)
+            @Html.TextBoxFor(m => m.Name)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.ShortDescription)
+            @Html.TextBoxFor(m => m.ShortDescription)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.LongDescription)
+            @Html.TextBoxFor(m => m.LongDescription)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.AllergyInformation)
+            @Html.TextBoxFor(m => m.AllergyInformation)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.Price)
+            @Html.EditorFor(m => m.Price)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.ImageUrl)
+            @Html.TextBoxFor(m => m.ImageUrl)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.ImageThumbnailUrl)
+            @Html.TextBoxFor(m => m.ImageThumbnailUrl)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.IsPieOfTheWeek)
+            @Html.CheckBoxFor(m => m.IsPieOfTheWeek)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.InStock)
+            @Html.CheckBoxFor(m => m.InStock)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.InStock)
+            @Html.DropDownListFor(m => m.CategoryId, Model.CategoriesList, htmlAttributes: new { @class = "form__control" })
+        </div>
+        
+    </fieldset>
+</form>
