@@ -4,14 +4,16 @@ using BethanysPieShop.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BethanysPieShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211104114453_Fourth")]
+    partial class Fourth
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -186,32 +188,6 @@ namespace BethanysPieShop.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Pies");
-                });
-
-            modelBuilder.Entity("BethanysPieShop.Models.PieReview", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PieId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Rating")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("PieId");
-
-                    b.ToTable("Reviews");
                 });
 
             modelBuilder.Entity("BethanysPieShop.Models.ShoppingCartItem", b =>
@@ -467,15 +443,6 @@ namespace BethanysPieShop.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("BethanysPieShop.Models.PieReview", b =>
-                {
-                    b.HasOne("BethanysPieShop.Models.Pie", null)
-                        .WithMany("Reviews")
-                        .HasForeignKey("PieId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("BethanysPieShop.Models.ShoppingCartItem", b =>
                 {
                     b.HasOne("BethanysPieShop.Models.Pie", "Pie")
@@ -544,11 +511,6 @@ namespace BethanysPieShop.Migrations
             modelBuilder.Entity("BethanysPieShop.Models.Order", b =>
                 {
                     b.Navigation("OrderDetails");
-                });
-
-            modelBuilder.Entity("BethanysPieShop.Models.Pie", b =>
-                {
-                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }

@@ -14,11 +14,13 @@ namespace BethanysPieShop.Controllers
     {
         private readonly IPieRepository _pieRepository;
         private readonly ICategoryRepository _categoryRepository;
+        private readonly IPieReviewRepository _reviewRepository;
 
-        public PieController(IPieRepository pieRepository, ICategoryRepository categoryRepository)
+        public PieController(IPieRepository pieRepository, ICategoryRepository categoryRepository, IPieReviewRepository reviewRepository)
         {
             _pieRepository = pieRepository;
             _categoryRepository = categoryRepository;
+            _reviewRepository = reviewRepository;
         }
 
         // GET: /<controller>/
@@ -59,13 +61,73 @@ namespace BethanysPieShop.Controllers
         }
 
 
-        public IActionResult Details(int id)
+        public IActionResult Details(int id, string sortOrder)
         {
             var pie = _pieRepository.GetPieById(id);
             if (pie == null)
                 return NotFound();
 
-            return View(pie);
+            var model = new PiesItemViewModel()
+            {
+                PieId = pie.PieId,
+                Name = pie.Name,
+                ShortDescription = pie.ShortDescription,
+                LongDescription = pie.LongDescription,
+                AllergyInformation = pie.AllergyInformation,
+                Price = pie.Price,
+                ImageFileToDisplay = pie.ImageFileToDisplay,
+                IsPieOfTheWeek = pie.IsPieOfTheWeek,
+                InStock = pie.InStock
+            };
+            model.Reviews = _reviewRepository.GetReviewsByPieId(pie.PieId)
+                .Select(x => new ReviewViewModel
+                {
+                    id = x.id,
+                    Title = x.Title,
+                    Rating = x.Rating,
+                    Description = x.Description,
+                    PieId = x.PieId
+                }).ToList();
+
+            var contentlist = model.Reviews;
+            ViewData["ScoreSortDesc"] = String.IsNullOrEmpty(sortOrder) ? "score_desc" : "";
+            ViewData["ScoreSortAsc"] = sortOrder == "Ascending" ? "score_asc" : "Ascending";
+            switch (sortOrder)
+            {
+                case "score_desc": model.Reviews = (List<ReviewViewModel>)contentlist.OrderByDescending(x => x.Rating).ToList();
+                        break;
+                case "score_asc": model.Reviews = (List<ReviewViewModel>)contentlist.OrderBy(x => x.Rating).ToList();
+                    break;
+            }
+
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult CreateReview(int pieid)
+        {
+            var model = new ReviewViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult CreateReview(ReviewViewModel review, int pieid)
+        {
+            var model = new Models.PieReview()
+            {
+                Title = review.Title,
+                Rating = review.Rating,
+                Description = review.Description,
+                PieId = review.PieId
+            };
+
+            if (ModelState.IsValid)
+            {
+                _reviewRepository.Add(model);
+                return RedirectToAction("Index");
+            }
+
+            return View();
         }
     }
 }

@@ -1,10 +1,17 @@
 ﻿
-@model Pie
+@model PiesItemViewModel
+
+@{
+var preImg = Model.ImageFileToDisplay;
+var base64 = Convert.ToBase64String(preImg);
+var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+
+}
 
 <h2>@Model.Name</h2>
 
 <div class="thumbnail">
-    <img alt="@Model.Name" src="@Model.ImageUrl">
+    <img alt="@Model.Name" src="@imgSrc">
     <div class="caption-full">
         <h3 class="pull-right">@Model.Price</h3>
         <h3>
@@ -15,8 +22,26 @@
         <div class="addToCart">
             <p class="button">
                 <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
-                   asp-route-pieId="@Model.PieId">Add to cart</a>
+                    asp-route-pieId="@Model.PieId">Add to cart</a>
             </p>
         </div>
     </div>
 </div>
+
+<p class="button">
+    <a class="btn btn-primary"
+       asp-controller="Pie"
+       asp-action="CreateReview"
+       asp-route-pieId="@Model.PieId">Create a Review</a>
+</p>
+
+<a asp-action="Details" asp-route-sortOrder="@ViewData["ScoreSortDesc"]">Descending</a>
+<a asp-action="Details" asp-route-sortOrder="@ViewData["ScoreSortAsc"]">Ascending</a>
+@foreach (var item in Model.Reviews)
+{
+    <div class="review__container">
+        <h3>@item.Title</h3>
+        <h4>@item.Rating.</h4>
+        <p>@item.Description.</p>
+    </div>
+}

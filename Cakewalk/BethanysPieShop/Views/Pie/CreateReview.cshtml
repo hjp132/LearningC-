@@ -1,0 +1,22 @@
+﻿@model ReviewViewModel
+
+<form asp-controller="Pie" asp-action="CreateReview" method="post">
+    <fieldset>
+        <div>
+            @Html.LabelFor(m => m.Title)
+            @Html.TextBoxFor(m => m.Title)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.Rating)
+            @Html.EditorFor(m => m.Rating)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.Description)
+            @Html.TextAreaFor(m => m.Description)
+        </div>
+        <div>
+            @Html.HiddenFor(m => m.PieId)
+        </div>
+        <input type="submit" value="Create" />
+    </fieldset>
+</form>

@@ -21,6 +21,13 @@ namespace BethanysPieShop.Models
             _appDbContext.Pies.Add(pie);
             _appDbContext.SaveChanges();
         }
+        
+        public void Delete(int pieId)
+        {
+            var pie = _appDbContext.Pies.Find(pieId);
+            _appDbContext.Pies.Remove(pie);
+            _appDbContext.SaveChanges();
+        }
 
         public IEnumerable<Pie> AllPies
         {
