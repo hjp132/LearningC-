@@ -77,7 +77,9 @@ namespace BethanysPieShop.Controllers
                 Price = pie.Price,
                 ImageFileToDisplay = pie.ImageFileToDisplay,
                 IsPieOfTheWeek = pie.IsPieOfTheWeek,
-                InStock = pie.InStock
+                InStock = pie.InStock,
+                ReviewScore = pie.ReviewScore
+            
             };
             model.Reviews = _reviewRepository.GetReviewsByPieId(pie.PieId)
                 .Select(x => new ReviewViewModel
@@ -89,6 +91,7 @@ namespace BethanysPieShop.Controllers
                     PieId = x.PieId
                 }).ToList();
 
+            
             var contentlist = model.Reviews;
             ViewData["ScoreSortDesc"] = String.IsNullOrEmpty(sortOrder) ? "score_desc" : "";
             ViewData["ScoreSortAsc"] = sortOrder == "Ascending" ? "score_asc" : "Ascending";
@@ -99,6 +102,10 @@ namespace BethanysPieShop.Controllers
                 case "score_asc": model.Reviews = (List<ReviewViewModel>)contentlist.OrderBy(x => x.Rating).ToList();
                     break;
             }
+
+            
+             
+
 
             return View(model);
         }
@@ -111,8 +118,10 @@ namespace BethanysPieShop.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateReview(ReviewViewModel review, int pieid)
+        public IActionResult CreateReview(ReviewViewModel review, int pieid, int rating)
         {
+
+            
             var model = new Models.PieReview()
             {
                 Title = review.Title,
@@ -124,10 +133,10 @@ namespace BethanysPieShop.Controllers
             if (ModelState.IsValid)
             {
                 _reviewRepository.Add(model);
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", "Pie", new { id = model.PieId });
             }
 
-            return View();
+            return RedirectToAction("CreateReview", "Pie", new { id = model.PieId });
         }
     }
 }

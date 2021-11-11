@@ -17,6 +17,7 @@ var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
         <h3>
             <a href="#">@Model.Name</a>
         </h3>
+        <h3>Score: @Model.ReviewScore</h3>
         <h4>@Model.ShortDescription</h4>
         <p>@Model.LongDescription</p>
         <div class="addToCart">
@@ -28,15 +29,23 @@ var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
     </div>
 </div>
 
-<p class="button">
-    <a class="btn btn-primary"
-       asp-controller="Pie"
-       asp-action="CreateReview"
-       asp-route-pieId="@Model.PieId">Create a Review</a>
-</p>
+<h2>Customer Reviews:</h2>
+<div class="btn__container">
+    <p class="button">
+        <a class="btn btn-primary"
+           asp-controller="Pie"
+           asp-action="CreateReview"
+           asp-route-pieId="@Model.PieId">Create a Review</a>
+    </p>
 
-<a asp-action="Details" asp-route-sortOrder="@ViewData["ScoreSortDesc"]">Descending</a>
-<a asp-action="Details" asp-route-sortOrder="@ViewData["ScoreSortAsc"]">Ascending</a>
+    <p class="button">
+        <a class="btn btn-primary" asp-action="Details" asp-route-sortOrder="@ViewData["ScoreSortDesc"]">Descending</a>
+    </p>
+    <p class="button">
+        <a class="btn btn-primary" asp-action="Details" asp-route-sortOrder="@ViewData["ScoreSortAsc"]">Ascending</a>
+    </p>
+</div>
+
 @foreach (var item in Model.Reviews)
 {
     <div class="review__container">

@@ -8,6 +8,7 @@ namespace BethanysPieShop.ViewModels
 {
     public class AdminViewModel
     {
-        public IEnumerable<Pie> AllPies { get; set; }
+        public IEnumerable<Pie> Pies { get; set; } 
+
     }
 }

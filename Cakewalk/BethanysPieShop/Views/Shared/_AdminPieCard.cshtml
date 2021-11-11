@@ -17,6 +17,7 @@
                    asp-action="Details"
                    asp-route-id="@Model.PieId">@Model.Name</a>
             </h3>
+            <h4>Score: @(Model.ReviewScore.HasValue ? Model.ReviewScore.ToString() : "To Be scored")</h4>
             <p>@Model.ShortDescription</p>
         </div>
         <div class="addToCart">

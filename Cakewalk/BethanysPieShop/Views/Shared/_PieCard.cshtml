@@ -5,6 +5,7 @@
     var base64 = Convert.ToBase64String(preImg);
     var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
 
+
 }
 
 <div class="col-sm-4 col-lg-4 col-md-4">
@@ -17,8 +18,8 @@
                    asp-action="Details"
                    asp-route-id="@Model.PieId">@Model.Name</a>
             </h3>
+            <h4>Score: @(Model.ReviewScore.HasValue ? Model.ReviewScore.ToString() : "To Be scored")</h4>
             <p>@Model.ShortDescription</p>
-            <h4>Score: </h4>
         </div>
         <div class="addToCart">
             <p class="button">

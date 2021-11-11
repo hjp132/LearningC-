@@ -33,21 +33,36 @@ namespace BethanysPieShop.Models
         {
             get
             {
-                return _appDbContext.Pies.Include(c => c.Category);
+                return this.GetQuery();
             }
+        }
+
+        public void Update(Pie pie)
+        {
+            var entry = _appDbContext.Entry(pie);
+            entry.State = EntityState.Modified;
+            _appDbContext.SaveChanges();
         }
 
         public IEnumerable<Pie> PiesOfTheWeek
         {
             get
             {
-                return _appDbContext.Pies.Include(c => c.Category).Where(p => p.IsPieOfTheWeek);
+                return this.GetQuery().Where(p => p.IsPieOfTheWeek);
             }
         }
 
         public Pie GetPieById(int pieId)
         {
-            return _appDbContext.Pies.FirstOrDefault(p => p.PieId == pieId);
+
+            return this.GetQuery().FirstOrDefault(p => p.PieId == pieId);
+            
+        }
+
+        private IQueryable<Pie> GetQuery()
+        {
+            return _appDbContext.Pies.Include(c => c.Category).Include(r => r.Reviews);
+
         }
     }
 }

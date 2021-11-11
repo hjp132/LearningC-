@@ -1,0 +1,12 @@
+{
+  rules: {
+        'class-name-format': [
+          1,
+          {
+            'allow-leading-underscore': false,
+            'convention': 'hyphenatedbem',
+            'convention-explanation': 'needs to be valid bem syntax'
+          }],
+          'mixins-before-declarations': 0
+      }
+}

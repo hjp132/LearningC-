@@ -51,7 +51,7 @@ namespace BethanysPieShop.Controllers
             if (ModelState.IsValid)
             {
                 _reviewRepository.Add(model);
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", "Details", new { id = model.PieId });
             }
 
             return View();

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "FiMuzIplA3u3MfgYnPDfbPWhl+3sLm1oaSnxUoq3vbU3cn+VgeOT353SSOugVWQoxAWlIiQPnL0zYWu4sUvn2A==",
+  "dgSpecHash": "vvFrrAeXixLAujdiYvZ6sreToct4K2ucsFm/YiyoIIi7jZqDa5qr1I7EMjMjD+v1qox25iydp6udiuIxHXCe8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\hpalmer\\source\\repos\\C#Training\\LearningC#\\Cakewalk\\BethanysPieShop\\BethanysPieShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hpalmer\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\hpalmer\\.nuget\\packages\\jquery\\1.4.4\\jquery.1.4.4.nupkg.sha512",
+    "C:\\Users\\hpalmer\\.nuget\\packages\\jquery.validation\\1.19.3\\jquery.validation.1.19.3.nupkg.sha512",
     "C:\\Users\\hpalmer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.1\\microsoft.aspnetcore.cryptography.internal.5.0.1.nupkg.sha512",
     "C:\\Users\\hpalmer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.1\\microsoft.aspnetcore.cryptography.keyderivation.5.0.1.nupkg.sha512",
     "C:\\Users\\hpalmer\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

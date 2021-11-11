@@ -1,46 +1,59 @@
 ﻿@model PiesItemViewModel
-
+<h4>Create a Pie</h4>
 <form asp-controller="Admin" asp-action="Create" method="post" enctype="multipart/form-data">
-    <fieldset>
-        <div>
-            @Html.LabelFor(m => m.Name)
-            @Html.TextBoxFor(m => m.Name)
-        </div>
-        <div>
-            @Html.LabelFor(m => m.ShortDescription)
-            @Html.TextBoxFor(m => m.ShortDescription)
-        </div>
-        <div>
-            @Html.LabelFor(m => m.LongDescription)
-            @Html.TextBoxFor(m => m.LongDescription)
-        </div>
-        <div>
-            @Html.LabelFor(m => m.AllergyInformation)
-            @Html.TextBoxFor(m => m.AllergyInformation)
-        </div>
-        <div>
-            @Html.LabelFor(m => m.Price)
-            @Html.EditorFor(m => m.Price)
-        </div>
-        <div>
-            @Html.LabelFor(m => m.ImageFileToDisplay)
-            <input type="file" name="file" class="btn"/>
-        </div>
-        <div>
-            @Html.LabelFor(m => m.IsPieOfTheWeek)
-            @Html.CheckBoxFor(m => m.IsPieOfTheWeek)
-        </div>
-        <div>
-            @Html.LabelFor(m => m.InStock)
-            @Html.CheckBoxFor(m => m.InStock)
-        </div>
-        <div>
-            @Html.LabelFor(m => m.InStock)
-            @Html.DropDownListFor(m => m.CategoryId, Model.CategoriesList, htmlAttributes: new { @class = "form__control" })
-        </div>
-        <div>
-            <input type="submit" value="Create" />
-        </div>
-        
-    </fieldset>
+    <div class="form__container">
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <fieldset>
+            <div class="form__item">
+                @Html.LabelFor(m => m.Name)
+                @Html.TextBoxFor(m => m.Name)
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+            <div class="form__item">
+                @Html.DisplayNameFor(m => m.ShortDescription)
+                @Html.TextBoxFor(m => m.ShortDescription)
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+            <div class="form__item">
+                @Html.DisplayNameFor(m => m.LongDescription)
+                @Html.TextBoxFor(m => m.LongDescription)
+                @Html.ValidationMessageFor(model => model.LongDescription, "", new { @class = "text-danger" })
+            </div>
+            <div class="form__item">
+                @Html.DisplayNameFor(m => m.AllergyInformation)
+                @Html.TextBoxFor(m => m.AllergyInformation)
+            </div>
+            <div class="form__item">
+                @Html.LabelFor(m => m.Price)
+                @Html.EditorFor(m => m.Price)
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+            <div class="form__item uncenter">
+                @Html.DisplayNameFor(m => m.ImageFileToDisplay)
+                <input type="file" name="file" class="btn" required/>
+                @Html.ValidationMessageFor(model => model.ImageFileToDisplay, "", new { @clas = "text-danger"})
+            </div>
+            <div class="form__item uncenter">
+                @Html.DisplayNameFor(m => m.IsPieOfTheWeek)
+                @Html.CheckBoxFor(m => m.IsPieOfTheWeek)
+            </div>
+            <div class="form__item uncenter">
+                @Html.DisplayNameFor(m => m.InStock)
+                @Html.CheckBoxFor(m => m.InStock)
+            </div>
+            <div class="form__item uncenter last">
+                @Html.DisplayNameFor(m => m.CategoryId)
+                @Html.DropDownListFor(m => m.CategoryId, Model.CategoriesList, htmlAttributes: new { @class = "form__control" })
+            </div>
+            <div>
+                <input type="submit" value="Create" />
+            </div>
+
+        </fieldset>
+    </div>
 </form>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>

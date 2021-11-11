@@ -17,22 +17,29 @@ namespace BethanysPieShop.Controllers
     {
         private readonly IPieRepository _pieRepository;
         private readonly ICategoryRepository _categoryRepository;
+        private readonly IPieReviewRepository _reviewRepository;
 
-        public AdminController(IPieRepository pieRepository, ICategoryRepository categoryRepository)
+        public AdminController(IPieRepository pieRepository, ICategoryRepository categoryRepository, IPieReviewRepository reviewRepository)
         {
             _pieRepository = pieRepository;
             _categoryRepository = categoryRepository;
+            _reviewRepository = reviewRepository;
         }
 
         public IActionResult Index()
         {
 
-            var adminViewModel = new AdminViewModel
-            {
-                AllPies = _pieRepository.AllPies
-            };
+            IEnumerable<Pie> pies;
+            pies = _pieRepository.AllPies.OrderBy(p => p.PieId);
 
-            return View(adminViewModel);
+
+            return View(new AdminViewModel
+            {
+                Pies = pies
+            });
+
+         
+
         }
 
         [HttpGet]
@@ -46,6 +53,7 @@ namespace BethanysPieShop.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(PiesItemViewModel pie, IFormFile file)
         {
             var model = new Models.Pie()
@@ -57,8 +65,7 @@ namespace BethanysPieShop.Controllers
                 Price = pie.Price,
                 IsPieOfTheWeek = pie.IsPieOfTheWeek,
                 InStock = pie.InStock,
-                CategoryId = pie.CategoryId,
-                //Category = pie.CategoriesList
+                CategoryId = pie.CategoryId
             };
 
             if (file != null)
@@ -81,10 +88,10 @@ namespace BethanysPieShop.Controllers
             if (ModelState.IsValid)
             {
                 _pieRepository.Add(model);
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", "Pie", new { id = model.PieId });
             }
 
-            return View();
+            return RedirectToAction("Create", "Admin", new { id = model.PieId });
         }
 
         
@@ -134,6 +141,48 @@ namespace BethanysPieShop.Controllers
             return View(model);
         }
 
-       
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id, IFormFile file)
+        {
+            var pie = _pieRepository.GetPieById(id);
+
+            var model = new Models.Pie()
+            {
+                Name = pie.Name,
+                ShortDescription = pie.ShortDescription,
+                LongDescription = pie.LongDescription,
+                AllergyInformation = pie.AllergyInformation,
+                Price = pie.Price,
+                IsPieOfTheWeek = pie.IsPieOfTheWeek,
+                InStock = pie.InStock,
+                CategoryId = pie.CategoryId
+            };
+
+            if (file != null)
+            {
+                if (file.Length > 0)
+                {
+                    byte[] byteImage = null;
+                    using (var fs1 = file.OpenReadStream())
+                    using (var ms1 = new MemoryStream())
+                    {
+                        fs1.CopyTo(ms1);
+                        byteImage = ms1.ToArray();
+                    }
+                    model.ImageFileToDisplay = byteImage;
+                }
+            }
+
+            if (ModelState.IsValid)
+            {
+                _pieRepository.Update(pie);
+                TempData["Message"] = "You have saved the changes";
+                return RedirectToAction("Details", "Pie", new { id = pie.PieId });
+            }
+            return View();
+        }
     }
+
+    
 }

@@ -10,10 +10,14 @@ namespace BethanysPieShop.ViewModels
     public class ReviewViewModel
     {
         public int id { get; set; }
+        [Required]
+        [StringLength(100)]
         public string Title { get; set; }
         [Range(0,5)]
+        [Required]
         public decimal Rating { get; set; }
-        [MaxLength(300, ErrorMessage = "Miaximum Characters Exceeded ( {1} characters.)")]
+        [MaxLength(500, ErrorMessage = "Miaximum Characters Exceeded ( {1} characters.)")]
+        [Required]
         public string Description { get; set; }
         public int PieId { get; set; }
     }

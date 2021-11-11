@@ -1,0 +1,10 @@
+
+@mixin safari {
+  @media not all and (min-resolution: .001dpcm)
+  {
+    @supports (-webkit-appearance: none) { //sass-lint:disable-line no-vendor-prefixes
+      @content;
+    }
+  }
+}
+
