@@ -29,7 +29,6 @@ namespace BethanysPieShop.ViewModels
         [Required]
         public decimal Price { get; set; }
         [DisplayName("Image of Pie")]
-        [Required(ErrorMessage = "Pie image is required")]
         public byte[] ImageFileToDisplay { get; set; }
         [DisplayName("Is it Pie Of The Week?")]
         public bool IsPieOfTheWeek { get; set; }

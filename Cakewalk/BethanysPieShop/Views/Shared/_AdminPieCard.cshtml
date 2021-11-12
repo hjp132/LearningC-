@@ -11,18 +11,18 @@
     <div class="thumbnail">
         <img src="@imgSrc" alt="">
         <div class="caption">
-            <h3 class="pull-right">@Model.Price.ToString("c")</h3>
             <h3>
                 <a asp-controller="Pie"
                    asp-action="Details"
                    asp-route-id="@Model.PieId">@Model.Name</a>
             </h3>
+            <h3>@Model.Price.ToString("c")</h3>
             <h4>Score: @(Model.ReviewScore.HasValue ? Model.ReviewScore.ToString() : "To Be scored")</h4>
             <p>@Model.ShortDescription</p>
         </div>
         <div class="addToCart">
             <p class="button">
-                <a class="btn btn-primary"
+                <a class="btn btn-primary btn-save"
                    asp-controller="Admin"
                    asp-action="Edit"
                    asp-route-id="@Model.PieId">Edit Pie</a>

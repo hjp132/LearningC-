@@ -7,55 +7,62 @@
 }
 
 
-@Html.ActionLink("Delete", "Delete", new { id = Model.PieId })
-<form asp-controller="Admin" asp-action="Create" method="post">
-    <fieldset>
-        <div>
+
+<p class="button">
+    <a class="btn btn-primary"
+       asp-controller="Admin"
+       asp-action="Delete"
+       asp-route-id="@Model.PieId">Delete Pie</a>
+</p>
+<form asp-controller="Admin" asp-action="Edit" method="post">
+    <fieldset class="form__container">
+        <div class="form__item">
             @Html.LabelFor(m => m.Name)
             @Html.TextBoxFor(m => m.Name)
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
         </div>
-        <div>
+        <div class="form__item">
             @Html.LabelFor(m => m.ShortDescription)
             @Html.TextBoxFor(m => m.ShortDescription)
+            @Html.ValidationMessageFor(model => model.ShortDescription, "", new { @class = "text-danger" })
         </div>
-        <div>
+        <div class="form__item">
             @Html.LabelFor(m => m.LongDescription)
             @Html.TextBoxFor(m => m.LongDescription)
+            @Html.ValidationMessageFor(model => model.LongDescription, "", new { @class = "text-danger" })
         </div>
-        <div>
+        <div class="form__item">
             @Html.LabelFor(m => m.AllergyInformation)
             @Html.TextBoxFor(m => m.AllergyInformation)
         </div>
-        <div>
+        <div class="form__item uncenter">
             @Html.LabelFor(m => m.Price)
             @Html.EditorFor(m => m.Price)
+            @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
         </div>
-        <div>
-            <label>Current Image:</label>
-            <img src="@imgSrc/>
+        <div class="form__item uncenter">
+            <label>Current Image - Upload to replace:</label>
+            <img class="image__edit"src="@imgSrc"/>
         </div>
-        <div>
-            @Html.LabelFor(m => m.ImageFileToDisplay)
-            @Html.TextBoxFor(m => m.ImageFileToDisplay)
+        <div class="form__item uncenter">
+            <label>Upload Image</label>
+            <input type="file" name="file" class="btn" />
+            @Html.ValidationMessageFor(model => model.ImageFileToDisplay, "", new { @clas = "text-danger" })
         </div>
-        @*<div>
-                @Html.LabelFor(m => m.ImageThumbnailUrl)
-                @Html.TextBoxFor(m => m.ImageThumbnailUrl)
-            </div>*@
-        <div>
+        <div class="form__item uncenter">
             @Html.LabelFor(m => m.IsPieOfTheWeek)
             @Html.CheckBoxFor(m => m.IsPieOfTheWeek)
         </div>
-        <div>
+        <div class="form__item uncenter">
             @Html.LabelFor(m => m.InStock)
             @Html.CheckBoxFor(m => m.InStock)
         </div>
-        <div>
+        <div class="form__item uncenter">
             @Html.LabelFor(m => m.InStock)
             @Html.DropDownListFor(m => m.CategoryId, Model.CategoriesList, htmlAttributes: new { @class = "form__control" })
         </div>
-        <div>
-            <input type="submit" value="Save" />
+        <div class="form__item uncenter">
+            <input class="btn btn-save" type="submit" value="Save" />
         </div>
 
     </fieldset>

@@ -21,7 +21,13 @@ namespace BethanysPieShop.Models
             _appDbContext.Pies.Add(pie);
             _appDbContext.SaveChanges();
         }
-        
+        public void Update(Pie pie)
+        {
+            var entry = _appDbContext.Entry(pie);
+            entry.State = EntityState.Modified;
+            _appDbContext.SaveChanges();
+        }
+
         public void Delete(int pieId)
         {
             var pie = _appDbContext.Pies.Find(pieId);
@@ -35,13 +41,6 @@ namespace BethanysPieShop.Models
             {
                 return this.GetQuery();
             }
-        }
-
-        public void Update(Pie pie)
-        {
-            var entry = _appDbContext.Entry(pie);
-            entry.State = EntityState.Modified;
-            _appDbContext.SaveChanges();
         }
 
         public IEnumerable<Pie> PiesOfTheWeek

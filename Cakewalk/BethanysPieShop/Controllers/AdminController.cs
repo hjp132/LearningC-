@@ -132,22 +132,22 @@ namespace BethanysPieShop.Controllers
 
             };
 
+
             var categories = _categoryRepository.AllCategories;
             model.CategoriesList = categories.Select(x => new SelectListItem { Text = x.CategoryName, Value = x.CategoryId.ToString() })
                 .ToList();
 
-            model.ImageFileToDisplay = pie.ImageFileToDisplay;
 
             return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, IFormFile file)
+        public IActionResult Edit(Pie pie, IFormFile file)
         {
-            var pie = _pieRepository.GetPieById(id);
+   
 
-            var model = new Models.Pie()
+            var model = new PiesItemViewModel()
             {
                 Name = pie.Name,
                 ShortDescription = pie.ShortDescription,

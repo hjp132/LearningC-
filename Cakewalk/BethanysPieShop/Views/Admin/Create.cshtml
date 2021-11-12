@@ -13,7 +13,7 @@
             <div class="form__item">
                 @Html.DisplayNameFor(m => m.ShortDescription)
                 @Html.TextBoxFor(m => m.ShortDescription)
-                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                @Html.ValidationMessageFor(model => model.ShortDescription, "", new { @class = "text-danger" })
             </div>
             <div class="form__item">
                 @Html.DisplayNameFor(m => m.LongDescription)
@@ -24,7 +24,7 @@
                 @Html.DisplayNameFor(m => m.AllergyInformation)
                 @Html.TextBoxFor(m => m.AllergyInformation)
             </div>
-            <div class="form__item">
+            <div class="form__item uncenter">
                 @Html.LabelFor(m => m.Price)
                 @Html.EditorFor(m => m.Price)
                 @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
